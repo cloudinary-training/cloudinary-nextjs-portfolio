@@ -3,19 +3,15 @@ import 'cloudinary-video-player/dist/cld-video-player.min.css';
 import { useEffect,memo } from 'react';
 
 const NativeVideoPlayer = ({ cloudName, publicId }) => {
-
-  // console.log(cloudName, publicId);
-
-  useEffect(() => {
-
-    const videoPlayer = window.cloudinary.videoPlayer('video-player', {
+ useEffect(() => {
+const videoPlayer = window.cloudinary.videoPlayer('video-player', {
       cloud_name: cloudName,
       muted: true,
       controls: true,
       width: '100%',
     });
     videoPlayer.source(publicId, {
-      sourceTypes: ['hls'],
+      sourceTypes: ['dash','hls','mp4'],
     });
   },[])
   return (
@@ -24,8 +20,7 @@ const NativeVideoPlayer = ({ cloudName, publicId }) => {
     </div>
   );
 };
-export default memo(NativeVideoPlayer);
-// export default NativeVideoPlayer;
+export default NativeVideoPlayer;
 
 
 

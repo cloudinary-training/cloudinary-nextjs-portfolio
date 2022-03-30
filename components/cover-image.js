@@ -17,11 +17,10 @@ export default function CoverImage({ title, slug, publicid, cloudname }) {
   });
 
   const cldImage = cld.image(publicid);
-  cldImage.resize(fill().width(2000).height(550).gravity('auto'));
-  cldImage.quality('auto');
-  cldImage.format('auto');
-
-  // using just responsive and accessibility plugins (also see accessibility, lazyload and placeholder)
+  cldImage
+    .resize(fill().width(2000).height(550).gravity('auto'))
+    .quality('auto')
+    .format('auto');
 
   const image = (
     <AdvancedImage

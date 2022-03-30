@@ -14,7 +14,7 @@ export default function Index({ allPosts }) {
     <>
       <Layout>
         <Head>
-          <title>Next.js Portfolio Example with {process.env.mediaMs}</title>
+          <title>Next.js/Cloudinary Integration with {process.env.mediaMs}</title>
         </Head>
         <Container>
           <Intro />

@@ -7,7 +7,6 @@ function UploadWidget() {
   const [key, setKey] = useState(Date.now());
 
   const uploadOpen = () => {
-    console.log('call me!');
     uploadWidget.open();
   };
   const uploadWidget = window.cloudinary.createUploadWidget(

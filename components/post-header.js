@@ -20,7 +20,7 @@ export default function PostHeader({
   cloudinary,
   videoPublicId,
 }) {
-  console.log('tagline', tagline);
+  // console.log('tagline', tagline);
 
   return (
     <>

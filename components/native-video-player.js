@@ -4,7 +4,7 @@ import { useEffect,memo } from 'react';
 
 const NativeVideoPlayer = ({ cloudName, publicId }) => {
 
-  console.log(cloudName, publicId);
+  // console.log(cloudName, publicId);
 
   useEffect(() => {
 

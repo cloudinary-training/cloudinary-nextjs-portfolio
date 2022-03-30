@@ -1,6 +1,5 @@
-import cn from 'classnames';
-import Link from 'next/link';
 import { Cloudinary } from '@cloudinary/url-gen';
+// Using the Next.js Image component
 import Image from 'next/image';
 
 export default function PostImage({ title, slug, publicid, cloudname }) {

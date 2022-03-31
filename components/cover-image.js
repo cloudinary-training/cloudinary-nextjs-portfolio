@@ -25,11 +25,11 @@ export default function CoverImage({ title, slug, publicid, cloudname }) {
   const image = (
     <AdvancedImage
       cldImg={cldImage}
-      plugins={[
-        // responsive({
-        //   steps: [375, 390, 640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-        // }),
-      ]}
+      // plugins={[
+      //   responsive({
+      //     steps: [375, 390, 640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+      //   }),
+      // ]}
       alt={`Cover Image for ${title}`}
       className={cn('shadow-small', {
         'hover:shadow-medium transition-shadow duration-200': slug,

@@ -3,9 +3,9 @@ import { AdvancedImage } from '@cloudinary/react';
 import { Cloudinary } from '@cloudinary/url-gen';
 
 // Import required actions and qualifiers.
-import {thumbnail} from "@cloudinary/url-gen/actions/resize";
-import {focusOn} from "@cloudinary/url-gen/qualifiers/gravity";
-import {FocusOn} from "@cloudinary/url-gen/qualifiers/focusOn";
+import { thumbnail } from '@cloudinary/url-gen/actions/resize';
+import { focusOn } from '@cloudinary/url-gen/qualifiers/gravity'; // action
+import { FocusOn } from '@cloudinary/url-gen/qualifiers/focusOn'; // qualifier
 
 export default function Avatar({ name, picture, publicid, cloudname }) {
   const cld = new Cloudinary({
@@ -16,11 +16,10 @@ export default function Avatar({ name, picture, publicid, cloudname }) {
   });
 
   const cldImage = cld.image(publicid);
-  cldImage.resize(
-    thumbnail().width(150).height(150).gravity(focusOn(FocusOn.face()))
-  );
-  cldImage.quality('auto');
-  cldImage.format('auto');
+  cldImage
+    .resize(thumbnail().width(150).height(150).gravity(focusOn(FocusOn.face())))
+    .quality('auto')
+    .format('auto');
 
   return (
     <div className='flex items-center'>

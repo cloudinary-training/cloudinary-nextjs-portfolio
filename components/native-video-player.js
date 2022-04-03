@@ -1,26 +1,28 @@
 import 'cloudinary-video-player/dist/cld-video-player.min.js';
 import 'cloudinary-video-player/dist/cld-video-player.min.css';
-import { useEffect,memo } from 'react';
+import { useEffect, useRef } from 'react';
 
 const NativeVideoPlayer = ({ cloudName, publicId }) => {
- useEffect(() => {
-const videoPlayer = window.cloudinary.videoPlayer('video-player', {
+  const videoEl = useRef();
+  useEffect(() => {
+    const videoPlayer = window.cloudinary.videoPlayer(videoEl.current, {
       cloud_name: cloudName,
       muted: true,
       controls: true,
       width: '100%',
     });
     videoPlayer.source(publicId, {
-      sourceTypes: ['dash','hls','mp4'],
+      sourceTypes: ['dash', 'hls', 'mp4'],
     });
-  },[])
+  }, []);
   return (
     <div className='mb-5 native-video-container'>
-      <video className='cld-video-player cld-fluid' id='video-player' />
+      <video
+        className='cld-video-player cld-fluid'
+        ref={videoEl}
+        id='video-player'
+      />
     </div>
   );
 };
 export default NativeVideoPlayer;
-
-
-

@@ -1,5 +1,5 @@
 import React from 'react';
-import { AdvancedImage, responsive } from '@cloudinary/react';
+import { AdvancedImage } from '@cloudinary/react';
 import { Cloudinary } from '@cloudinary/url-gen';
 import { fill } from '@cloudinary/url-gen/actions/resize';
 

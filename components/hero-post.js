@@ -1,12 +1,14 @@
 import Avatar from '../components/avatar'
-import CoverImage from '../components/cover-image'
 import Link from 'next/link'
 import TagLine from "./tag-line";
 
+import dynamic from 'next/dynamic';
+const DynamicCoverImage = dynamic(() => import('./cover-image'), {
+  ssr: false,
+});
 
 export default function HeroPost({
   title,
-  coverImage,
   tagline,
   postNumber,
   designer,
@@ -17,7 +19,7 @@ export default function HeroPost({
   return (
     <section>
       <div className="mb-8 md:mb-16">
-        <CoverImage
+        <DynamicCoverImage
           title={title}
           slug={slug}
           publicid={cloudinary.publicId}

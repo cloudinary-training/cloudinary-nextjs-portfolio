@@ -1,13 +1,16 @@
 import Avatar from '../components/avatar';
-import CoverImage from './cover-image';
 import Link from 'next/link';
 import TagLine from '../components/tag-line';
+
+import dynamic from 'next/dynamic';
+const DynamicCoverImage = dynamic(() => import('./cover-image'), {
+  ssr: false,
+});
 
 export default function PostPreview({
   tagline,
   cloudinary,
   title,
-  coverImage,
   postNumber,
   designer,
   slug,
@@ -16,7 +19,7 @@ export default function PostPreview({
   return (
     <div>
       <div className='mb-5'>
-        <CoverImage
+        <DynamicCoverImage
           title={title}
           slug={slug}
           publicid={cloudinary.publicId}

@@ -15,7 +15,6 @@ export default function CoverImage({ title, slug, publicid, cloudname }) {
       secure: true,
     },
   });
-
   const cldImage = cld.image(publicid);
   cldImage
     .resize(fill().width(2000).height(550).gravity('auto'))

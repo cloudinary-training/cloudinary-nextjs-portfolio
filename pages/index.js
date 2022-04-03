@@ -21,7 +21,6 @@ export default function Index({ allPosts }) {
            {heroPost && (
             <HeroPost
               title={heroPost.title}
-              coverImage={heroPost.coverImage}
               tagline={heroPost.tagline}
               postNumber={heroPost.postNumber}
               designer={heroPost.designer}
@@ -45,7 +44,6 @@ export async function getStaticProps() {
     "slug",
     "cloudinary",
     "designer",
-    "coverImage",
     "excerpt",
   ]);
 

@@ -1,9 +1,12 @@
-import Avatar from '../components/avatar';
 import Link from 'next/link';
 import TagLine from '../components/tag-line';
 
 import dynamic from 'next/dynamic';
 const DynamicCoverImage = dynamic(() => import('./cover-image'), {
+  ssr: false,
+});
+
+const DynamicAvatar = dynamic(() => import('./avatar'), {
   ssr: false,
 });
 
@@ -35,9 +38,8 @@ export default function PostPreview({
         <TagLine tagline={tagline} />
       </div>
       <p className='text-lg leading-relaxed mb-4'>{excerpt}</p>
-      <Avatar
+      <DynamicAvatar
         name={designer.name}
-        picture={designer.picture}
         publicid={designer.publicId}
         cloudname={process.env.cloudname}
       />

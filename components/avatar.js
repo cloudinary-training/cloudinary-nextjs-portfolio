@@ -7,7 +7,7 @@ import { thumbnail } from '@cloudinary/url-gen/actions/resize';
 import { focusOn } from '@cloudinary/url-gen/qualifiers/gravity'; // action
 import { FocusOn } from '@cloudinary/url-gen/qualifiers/focusOn'; // qualifier
 
-export default function Avatar({ name, picture, publicid, cloudname }) {
+export default function Avatar({ name, publicid, cloudname }) {
   const cld = new Cloudinary({
     cloud: {
       cloudName: cloudname,

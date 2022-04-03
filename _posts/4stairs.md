@@ -8,7 +8,6 @@ cloudinary:
   publicId: "nextjs-portfolio/stairs"
 designer:
   name: "Sarah Sharpe"
-  picture: "/assets/blog/designers/jj.jpeg"
   publicId: "nextjs-portfolio/designer1"
 ogImage:
   url: "/assets/blog/dynamic-routing/cover.jpg"

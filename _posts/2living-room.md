@@ -8,7 +8,6 @@ cloudinary:
   publicId: "nextjs-portfolio/living-room"
 designer:
   name: Ben Johnson
-  picture: "/assets/blog/designers/jj.jpeg"
   publicId: "nextjs-portfolio/designer8"
 ogImage:
   url: "/assets/blog/dynamic-routing/cover.jpg"

@@ -1,9 +1,12 @@
-import Avatar from '../components/avatar';
 import PostTitle from '../components/post-title';
 import Tagline from '../components/tag-line';
 import PostImage from './post-image';
-
 import CloudinaryVideoElement from './cloudinary-video-element';
+
+const DynamicAvatar = dynamic(() => import('./avatar'), {
+  ssr: false,
+});
+
 export default function PostHeader({
   title,
   slug,
@@ -17,9 +20,8 @@ export default function PostHeader({
     <>
       <PostTitle>{title}</PostTitle>
       <div className='hidden md:block md:mb-12'>
-        <Avatar
+        <DynamicAvatar
           name={designer.name}
-          picture={designer.picture}
           publicid={designer.publicId}
           cloudname={process.env.cloudname}
         />
@@ -35,9 +37,8 @@ export default function PostHeader({
 
       <div className='max-w-2xl mx-auto'>
         <div className='block md:hidden mb-6'>
-          <Avatar
+          <DynamicAvatar
             name={designer.name}
-            picture={designer.picture}
             publicid={designer.publicId}
             cloudname={process.env.cloudname}
           />

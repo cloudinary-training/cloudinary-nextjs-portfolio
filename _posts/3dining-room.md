@@ -8,7 +8,6 @@ cloudinary:
   publicId: "nextjs-portfolio/diningroom"
 designer:
   name: Tina Neutkens
-  picture: "/assets/blog/designers/tim.jpeg"
   publicId: "nextjs-portfolio/designer2"
 ogImage:
   url: "/assets/blog/hello-world/cover.jpg"

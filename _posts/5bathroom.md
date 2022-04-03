@@ -8,7 +8,6 @@ cloudinary:
   publicId: "nextjs-portfolio/bathroom"
 designer:
   name: R Jenkins
-  picture: "/assets/blog/designers/joe.jpeg"
   publicId: "nextjs-portfolio/designer7"
 ogImage:
   url: "/assets/blog/preview/cover.jpg"

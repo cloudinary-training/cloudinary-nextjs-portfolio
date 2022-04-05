@@ -2,7 +2,7 @@ import PostTitle from '../components/post-title';
 import Tagline from '../components/tag-line';
 import PostImage from './post-image';
 import CloudinaryVideoElement from './cloudinary-video-element';
-
+import dynamic from 'next/dynamic';
 const DynamicAvatar = dynamic(() => import('./avatar'), {
   ssr: false,
 });

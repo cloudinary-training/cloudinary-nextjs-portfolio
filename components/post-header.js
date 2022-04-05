@@ -29,7 +29,6 @@ export default function PostHeader({
       <div className='mb-8 md:mb-16 sm:mx-0'>
         <PostImage
           title={title}
-          slug={slug}
           publicid={cloudinary.publicId}
           cloudname={process.env.cloudname}
         />

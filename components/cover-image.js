@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 // Import React SDK and Url Generator
 
-import { AdvancedImage, responsive } from '@cloudinary/react';
+import { AdvancedImage} from '@cloudinary/react';
 import { CloudinaryImage } from '@cloudinary/url-gen';
 
 // Import required actions and qualifiers.

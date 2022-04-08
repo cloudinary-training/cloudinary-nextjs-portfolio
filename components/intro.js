@@ -17,7 +17,7 @@ export default function Intro() {
           href="https://www.cloudinary.com/"
           className="underline hover:text-success duration-200 transition-colors"
         >
-          {process.env.mediaMs}
+          {process.env.media}
         </a>{' '}
         
         .

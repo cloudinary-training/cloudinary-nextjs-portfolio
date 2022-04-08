@@ -8,7 +8,7 @@ import { focusOn } from '@cloudinary/url-gen/qualifiers/gravity'; // action
 import { FocusOn } from '@cloudinary/url-gen/qualifiers/focusOn'; // qualifier
 
 export default function Avatar({ name, publicid, cloudname }) {
-  const cldImage = new CloudinaryImage(publicid, {cloudName: cloudname, analytics: false});
+  const cldImage = new CloudinaryImage(publicid, {cloudName: cloudname});
   cldImage
     .resize(thumbnail().width(150).height(150).gravity(focusOn(FocusOn.face())))
     .quality('auto')

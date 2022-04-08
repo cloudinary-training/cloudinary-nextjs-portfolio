@@ -1,4 +1,3 @@
-import { CloudinaryImage } from '@cloudinary/url-gen';
 // Using the Next.js Image component
 import Image from 'next/image';
 

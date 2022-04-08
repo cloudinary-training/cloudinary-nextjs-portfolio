@@ -11,8 +11,7 @@ import { fill } from '@cloudinary/url-gen/actions/resize';
 
 export default function CoverImage({ title, slug, publicid, cloudname }) {
   const cldImage = new CloudinaryImage(publicid, {
-    cloudName: cloudname,
-    analytics: false,
+    cloudName: cloudname
   });
   cldImage
     .resize(fill().width(2000).height(550).gravity('auto'))

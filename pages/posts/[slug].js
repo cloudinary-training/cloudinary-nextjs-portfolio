@@ -32,10 +32,9 @@ export default function Post({ post, morePosts, preview }) {
               </Head>
               <PostHeader
                 title={post.title}
-                cloudinary={post.cloudinary}
                 video={post.video}
                 tagline={post.tagline}
-                postNumber={post.postNumber}
+                image={post.cloudinary.image}
                 designer={post.designer}
                 videoPublicId={post.video}
               />

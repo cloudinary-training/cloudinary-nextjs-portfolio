@@ -1,4 +1,4 @@
-import { useEffect, useState, memo } from 'react';
+import { useEffect, useState } from 'react';
 import ShareGalleryItem from './share-gallery-item'
 const ShareGallery = () => {
   const [error, setError] = useState(null);

@@ -7,13 +7,13 @@ const DynamicAvatar = dynamic(() => import('./avatar'), {
   ssr: false,
 });
 
+
+
 export default function PostHeader({
   title,
-  slug,
   tagline,
+  image,
   designer,
-  video,
-  cloudinary,
   videoPublicId,
 }) {
   return (
@@ -29,8 +29,7 @@ export default function PostHeader({
       <div className='mb-8 md:mb-16 sm:mx-0'>
         <PostImage
           title={title}
-          publicid={cloudinary.publicId}
-          cloudname={process.env.cloudname}
+          image={image}
         />
       </div>
 

@@ -6,6 +6,7 @@ postNumber: "2"
 video: "nextjs-portfolio/livingroom-vid"
 cloudinary:
   publicId: "nextjs-portfolio/living-room"
+  image: "https://res.cloudinary.com/cloudinary-training/image/upload/v1/nextjs-portfolio/living-room"
 designer:
   name: Ben Johnson
   publicId: "nextjs-portfolio/designer8"

@@ -6,6 +6,7 @@ postNumber: "1"
 video: "nextjs-portfolio/kitchen-vid"
 cloudinary:
   publicId: "nextjs-portfolio/kitchen"
+  image: "https://res.cloudinary.com/cloudinary-training/image/upload/v1/nextjs-portfolio/kitchen"
 designer:
   name: John Haddad
   publicId: "nextjs-portfolio/designer4"

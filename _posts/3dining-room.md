@@ -6,6 +6,7 @@ postNumber: "3"
 video: "nextjs-portfolio/diningroom-vid"
 cloudinary:
   publicId: "nextjs-portfolio/diningroom"
+  image: "https://res.cloudinary.com/cloudinary-training/image/upload/v1/nextjs-portfolio/diningroom"
 designer:
   name: Tina Neutkens
   publicId: "nextjs-portfolio/designer2"

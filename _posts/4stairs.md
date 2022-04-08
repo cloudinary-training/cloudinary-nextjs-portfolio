@@ -6,6 +6,7 @@ postNumber: "4"
 video: "nextjs-portfolio/stairs-vid"
 cloudinary:
   publicId: "nextjs-portfolio/stairs"
+  image: "https://res.cloudinary.com/cloudinary-training/image/upload/v1/nextjs-portfolio/stairs"
 designer:
   name: "Sarah Sharpe"
   publicId: "nextjs-portfolio/designer1"

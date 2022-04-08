@@ -6,6 +6,7 @@ postNumber: "5"
 video: "nextjs-portfolio/bathroom-vid"
 cloudinary:
   publicId: "nextjs-portfolio/bathroom"
+  image: "https://res.cloudinary.com/cloudinary-training/image/upload/v1/nextjs-portfolio/bathroom"
 designer:
   name: R Jenkins
   publicId: "nextjs-portfolio/designer7"

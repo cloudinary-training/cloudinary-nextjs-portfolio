@@ -14,7 +14,6 @@ export default function PostPreview({
   tagline,
   cloudinary,
   title,
-  postNumber,
   designer,
   slug,
   excerpt,

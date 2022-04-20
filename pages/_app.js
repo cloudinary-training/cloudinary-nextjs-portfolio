@@ -8,6 +8,7 @@ export default function MyApp({ Component, pageProps }) {
       <Script
         id='cld-upload-widget'
         src='https://upload-widget.cloudinary.com/global/all.js'
+        strategy='beforeInteractive'
       />
     </>
   );

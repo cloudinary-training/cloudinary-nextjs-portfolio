@@ -54,7 +54,7 @@ Code credit
 https://github.com/vercel/next.js/tree/canary/examples/blog-starter
 
 
-Media credits
+## Media credits
 Photo by Cosmin Paduraru from Pexels
 https://www.pexels.com/photo/abstract-antique-architectural-design-architecture-340981/
 

@@ -7,8 +7,6 @@ const DynamicAvatar = dynamic(() => import('./avatar'), {
   ssr: false,
 });
 
-
-
 export default function PostHeader({
   title,
   tagline,
